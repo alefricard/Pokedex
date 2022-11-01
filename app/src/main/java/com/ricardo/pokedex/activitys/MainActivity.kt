@@ -1,11 +1,9 @@
 package com.ricardo.pokedex.activitys
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.ricardo.pokedex.R
+import androidx.appcompat.app.AppCompatActivity
 import com.ricardo.pokedex.adapter.PokeAdapter
 import com.ricardo.pokedex.databinding.ResActivityMainBinding
-import com.ricardo.pokedex.databinding.ResPokemonItemBinding
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initRecyclerView() {
+        binding.rvPokemons.adapter = PokeAdapter()
         this.pokeAdapter = PokeAdapter()
 
 

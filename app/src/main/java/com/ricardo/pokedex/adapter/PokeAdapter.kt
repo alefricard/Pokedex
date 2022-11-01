@@ -46,7 +46,7 @@ class PokeAdapter : RecyclerView.Adapter<RecyclerView.ViewHolder>(){
             nome.text = pokemon.name
             number.text = pokemon.number.toString()
             type1.text = pokemon.types.toString()
-            imagePokemon.drawable
+            imagePokemon.toString() = pokemon.imagemUrl
 
 
         }
